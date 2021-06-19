@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E1201710110278.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ver Lista"
+                     x:Name="toolbarmenu"
+                     IconImageSource="example_icon.png"
+                     Order="Primary"
+                     Priority="0"
+                     Clicked="toolbarmenu_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout BackgroundColor="White">
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Guardar Ubicación" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        
+            
+        <Label Text="Latitud Actual:" HorizontalTextAlignment="left" Padding="2" TextColor="Black" FontSize="16"/>
+        <Entry TextColor="Black" x:Name="txtLatitud"  />
+
+        <Label Text="Longitud Actual:" HorizontalTextAlignment="left" TextColor="Black" FontSize="16"/>
+        <Entry PlaceholderColor="White" TextColor="Black" x:Name="txtLongitud"/>
+
+        <Label Text="Describa la ubicacion: " HorizontalTextAlignment="left" TextColor="Black" FontSize="16"/>
+        <Entry  PlaceholderColor="White" TextColor="Black" x:Name="txtDescripcion"/>
+
+        <Label Text="Descripcion corta: " HorizontalTextAlignment="left" TextColor="Black" FontSize="16"/>
+        <Entry  PlaceholderColor="White" TextColor="Black" x:Name="txtShortDescripcion" />
+
+
+        <Button x:Name="btnSalvar" Text="Salvar Localización" Clicked="btnSalvar_Clicked" BackgroundColor="Green"/>
+        
+    </StackLayout>
+
+</ContentPage>
